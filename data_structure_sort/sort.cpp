@@ -236,7 +236,7 @@ void QuickSort(int data[], int size, int left, int right) {
     if (left >= right) return;
 
     int tmp;
-    int mid = left +right / 2;
+    int mid =(left +right) / 2;
     tmp = data[mid];
     data[mid] = data[right];
     data[right] = tmp;
