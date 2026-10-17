@@ -87,7 +87,7 @@ void measure(void (*algorithm)(int data[], int size), int src[], int n, int iter
         algorithm(A, n);
     }
     gettimeofday(&t1, nullptr);
-    showArray(A, n);        // After sorting
+    //showArray(A, n);        // After sorting
     usec = (t1.tv_sec * 1000000 + t1.tv_usec) - 
            (t0.tv_sec * 1000000 + t0.tv_usec);
     sec = usec / 1000000;
