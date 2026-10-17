@@ -235,8 +235,9 @@ void radixexchangeSort(int data[], int size,int left = 0, int right = -1, int bi
 void QuickSort(int data[], int size, int left, int right) {
     if (left >= right) return;
 
-    int mid = left + (right - left) / 2;
-    int tmp = data[mid];
+    int tmp;
+    int mid = left +right / 2;
+    tmp = data[mid];
     data[mid] = data[right];
     data[right] = tmp;
 
@@ -245,7 +246,7 @@ void QuickSort(int data[], int size, int left, int right) {
     int i = left - 1;
     int j = right;
     
-
+    
     while (true) {
         do { i++; } while (data[i] < pe);
         do { j--; } while (j >= left && data[j] >= pe);
